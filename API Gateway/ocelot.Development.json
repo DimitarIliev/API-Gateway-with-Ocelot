@@ -10,7 +10,14 @@
         }
       ],
       "UpstreamPathTemplate": "/api/weather",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     }
   ],
   "GlobalConfiguration": {

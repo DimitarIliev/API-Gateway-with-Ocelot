@@ -39,6 +39,8 @@ namespace API_Gateway
                 });
             });
 
+            //set up authentication in the API Gateway
+
             app.UseOcelot().Wait();
         }
     }
