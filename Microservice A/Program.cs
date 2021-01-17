@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace API_Gateway
+namespace Microservice_A
 {
     public class Program
     {
@@ -20,12 +20,7 @@ namespace API_Gateway
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.ConfigureAppConfiguration(config =>
-                    {
-                        config.AddJsonFile($"ocelot.{env}.json");
-                    });
-                }).ConfigureLogging(logging => logging.AddConsole());
+                });
     }
 }
