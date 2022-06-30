@@ -8,3 +8,5 @@ By using an API Gateway, we can provide one unified entry point to the whole sys
 # API Gateway with Ocelot
 Ocelot is an open-source, scalable and fast API Gateway designed for .NET Core in combination with a microservices architecture. 
 Below, I will briefly explain how we can use it in a project. 
+
+Link to article: https://www.linkedin.com/pulse/implementing-api-gateway-net-core-ocelot-dimitar-iliev/
